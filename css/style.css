@@ -48,24 +48,26 @@ img {
 
 
     @media screen and (max-width: 767px) {
-        height: 30px;
-    }
-
-
-
+        /* height: 30px; */
 
 }
 
 .header__inner {
     max-width: 1080px;
     padding-inline: 99px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @media screen and (max-width: 767px) {
         padding-inline: 20px;
     }
 }
 
-.header__logo {}
+.header__logo {
+    font-weight: bold;
+    /* color:#0d96A0; */
+}
 
 .header__nav {}
 
