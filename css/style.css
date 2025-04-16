@@ -3,32 +3,45 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
     background-color: #fff;
     color: #505050;
     font-weight: 500;
     /* line-height:calc(33 / 18); */
-  }
-  
-  a {
+}
+
+a {
     color: #505050;
     /* text-decoration: none; */
     transition: color 0.3 ease;
-  }
-  
-  @media screen and (min-width: 768px) {
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
     .pc_none {
-      display: none !important;
+        display: none !important;
     }
-  
+
     .ib {
-      display: inline-block;
+        display: inline-block;
     }
-  }
+}
+
+.inner {
+    max-width: calc(980px + 20px + 20px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {}
+}
 
 .header {
     height: 50px;
@@ -44,9 +57,11 @@ html {
 }
 
 .header__inner {
+    max-width: 1080px;
+    padding-inline: 99px 60px;
 
     @media screen and (max-width: 767px) {
-        
+        padding-inline: 20px;
     }
 }
 
