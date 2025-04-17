@@ -55,6 +55,7 @@ img {
 
     }
 
+    /* ヘッダー内 */
     .header__inner {
         max-width: 1080px;
         padding-inline: 99px 60px;
@@ -89,16 +90,12 @@ img {
         display: inline-block;
     }
 
+    .header__nav {}
+
+    
     .header__nav-list {
         display: flex;
         gap: 8px;
         list-style: none;
 
     }
-}
-
-
-
-.header__nav {}
-
-.header__nav-list {}
