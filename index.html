@@ -17,7 +17,9 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo">
-        <img src="images/icon.svg" alt="足跡アイコン" class="header__logo-icon">
+       <div class="header__img">
+           <img src="images/icon.svg" alt="足跡アイコン" width="26" height="25">
+       </div>
         <span class="logo-text">滑石きたむら動物病院</span>
       </h1>
 
@@ -40,7 +42,12 @@
       <p class="fv__lead">滑石きたむら動物病院は</p>
       <h2 class="fv__title">大切な家族の<br>ホームドクターです</h2>
     </div>
-    <img src="images/fv-pc.jpg" alt="犬と獣医師" class="fv__visual__image">
+    <div class="fv__img">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/fv-pc.jpg">
+            <img src="images/fv-sp.jpg" alt="犬と獣医師" width="375" height="550">
+        </picture>
+    </div>
   </section>
 
   <!-- ご挨拶 -->
