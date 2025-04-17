@@ -109,21 +109,4 @@ img {
 
     }
 
-    /* 動物たちの健康で
-幸せな生活をサポート */
-
-    position: absolute;
-    width: 335px;
-    height: 70px;
-    left: calc(50% - 335px/2);
-    top: 649px;
-
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 35px;
-    /* または140% */
-    text-align: center;
-
-    color: #0D96A0;
+   
