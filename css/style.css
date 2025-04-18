@@ -49,8 +49,11 @@ img {
 .header {
     height: 50px;
     background-color: #fff;
-    padding: 20px 0;
-
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
     @media screen and (max-width: 767px) {
         /* height: 30px; */
 
@@ -64,6 +67,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 
     @media screen and (max-width: 767px) {
         padding-inline: 20px;
@@ -79,9 +83,15 @@ img {
     display: flex;
     align-items: center;
     gap: 8px;
+    height: 100%;
+
+    @media screen and (max-width: 767px) {
+        font-size: 2rem;
+    }
+
 }
 
-@media screen and (max-width: 767px) {}
+
 
 
 .logo-text {
@@ -102,15 +112,27 @@ img {
     aspect-ratio: 1;
 }
 
+.header__nav {
+    height: 100%;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
 
 .header__nav-list {
     display: flex;
     gap: 8px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
 }
 
 @media screen and (max-width: 767px) {
-    .header__nav-list{
+    .header__nav-list {
         flex-direction: column;
     }
 }
@@ -119,54 +141,63 @@ img {
     text-decoration: none;
     font-size: 1.4rem;
     transition: color 0.3s ease;
+    height: 100%;
 }
 
 
+@media screen and (max-width: 767px) {
+    .header__nav-list a {
+        position: absolute;
+        width: 200px;
+        height: 33px;
+        left: 55px;
+        top: 8px;
+        font-size: 2rem;
+        line-height: 33px;;
+    }
+}
+.main{
+    margin-top: 50px;
+}
+
+.fv {
+    position: relative;
+}
+
+.fv__img img {
+    aspect-ratio: 1080 / 500;
+
     @media screen and (max-width: 767px) {
-        .header__nav-list a {
-            position: absolute;
-            width: 200px;
-            height: 33px;
-            left: 55px;
-            top: 8px;
-            font-size: 2rem;
-            line-height: 33px;
-        }
+        aspect-ratio: 375 / 550;
+    }
 
-        .fv {
-            position: relative;
-            max-width: 1080px;
-            margin: 0 auto;
-        }
+}
 
-        @media screen and (max-width: 767px) {}
 
-        .fv__text {
-            position: absolute;
-            box-sizing: border-box;
-            width: 492px;
-            height: 210px;
-            left: 0px;
-            top: 202px;
-            background: rgba(255, 255, 255, 0.701961);
-        }
+@media screen and (max-width: 767px) {}
 
-        .fv__lead {
-            
-            font-family: "Yu Gothic", "游ゴシック", sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 3rem;
-            text-align: left;
-        }
+.fv__text {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: 14px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: calc(23 / 1080*100vw) calc(35 / 1080*100vw) calc(23 / 1080*100vw) calc(99 / 1080*100vw);
+    margin-top: calc(14 / 1080*100vw);
+}
 
-        .fv__title {
-            position: absolute;
-            color: #0d96A0;
-            max-width: 275px;
-            left: 99px;
-            top: 225px;
-            font-weight: 700;
-            line-height: 30px;
-        }
-        .header__nav {}
+.fv__lead {
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: left;
+    font-size: calc(25 / 1080*100vw);
+}
+
+.fv__title {
+    color: #0d96A0;
+    font-weight: 700;
+    line-height: normal;
+    font-size: calc(40 / 1080*100vw);
+    margin-top: calc(8 / 1080*100vw);
+}
