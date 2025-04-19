@@ -50,13 +50,15 @@ img {
     display: flex;
     text-align: center;
     justify-content: center;
-    gap:20px;
+    align-items: center;
+    gap: 20px;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal
 }
-.section__img img{
+
+.section__img img {
     display: block;
     width: 26px;
     height: 25px;
@@ -87,6 +89,7 @@ img {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    margin: 0 auto;
 
     @media screen and (max-width: 767px) {
         padding-inline: 20px;
@@ -297,22 +300,61 @@ img {
 
 /* 強み --> */
 .strength {
-    background-color: #f5f5f5;
+    background-color: rgba(13, 150, 160, 0.10);
     padding: 64px 0;
-  
+
+
     @media screen and (max-width: 767px) {
-      padding: 51px 20px 42px 20px;
+        padding: 51px 20px 42px 20px;
     }
-  }  
+}
 
-.strength__items {}
+.strength__items {
+    margin-top: 40px;
 
-.strength__item {}
 
-.strength__img {}
 
-.strength__body {}
+}
 
-.strength__subtitle {}
+.strength__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: calc(45 / 920*100%);
+}
 
-.strength__text {}
+.strength__item:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.strength__item:not(:first-of-type) {
+    margin-top: 50px;
+
+}
+
+
+.strength__img {
+    width: calc(440 / 920*100%);
+}
+
+.strength__img img {
+    aspect-ratio: 440 / 247;
+
+}
+
+.strength__body {
+    flex: 1;
+}
+
+.strength__subtitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.strength__text {
+    margin-top: 19px;
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+
+
+}
