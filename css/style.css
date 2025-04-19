@@ -55,7 +55,13 @@ img {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: normal
+    line-height: normal;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 42px;
+
+    }
+
 }
 
 .section__img img {
@@ -202,10 +208,10 @@ img {
 
     @media screen and (max-width: 767px) {
         position: absolute;
-        top: auto;
+        top: initial;
         bottom: 0;
-        right: : calc(64 / 375 * 100vw);
-        padding: calc(16 / 375 * 100vw);
+        /* right:  calc(64 / 375 * 100vw); */
+        padding: calc(18 / 375*100vw) calc(23 / 375*100vw) calc(14 / 375*100vw) calc(20 / 375*100vw);
         transform: none;
         margin-top: 0;
 
@@ -219,7 +225,7 @@ img {
     font-size: calc(25 / 1080*100vw);
 
     @media screen and (max-width: 767px) {
-        font-size: 2rem;
+        font-size: calc(20 / 375*100vw);
     }
 }
 
@@ -231,7 +237,7 @@ img {
     margin-top: calc(8 / 1080*100vw);
 
     @media screen and (max-width: 767px) {
-        font-size: 3rem;
+        font-size: calc(30 / 375*100vw);
     }
 }
 
@@ -252,7 +258,7 @@ img {
     background: #FFFFFF;
 
     @media screen and (max-width: 767px) {
-        padding: 49px 20px 17px 20px;
+        padding: 49px 0 17px;
     }
 }
 
@@ -303,16 +309,15 @@ img {
     background-color: rgba(13, 150, 160, 0.10);
     padding: 64px 0;
 
-
     @media screen and (max-width: 767px) {
-        padding: 51px 20px 42px 20px;
+        padding: 51px 0 42px;
     }
 }
 
 .strength__items {
     margin-top: 40px;
 
-
+    @media screen and (max-width: 767px) {}
 
 }
 
@@ -321,6 +326,11 @@ img {
     align-items: center;
     justify-content: center;
     column-gap: calc(45 / 920*100%);
+
+    @media screen and (max-width: 767px) {
+        display: block;
+
+    }
 }
 
 .strength__item:nth-of-type(odd) {
@@ -335,6 +345,11 @@ img {
 
 .strength__img {
     width: calc(440 / 920*100%);
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+
+    }
 }
 
 .strength__img img {
@@ -349,12 +364,26 @@ img {
 .strength__subtitle {
     font-size: 2.2rem;
     font-weight: 700;
+
+    @media screen and (max-width: 767px) {
+        font-size: 2.0rem;
+        margin-top: 26px;
+        text-align: center;
+        line-height: calc(30 / 20);
+    }
+
 }
 
 .strength__text {
     margin-top: 19px;
     font-size: 1.8rem;
     line-height: calc(33 / 18);
+
+    @media screen and (max-width: 767px) {
+        line-height: calc(30 / 16);
+        margin-bottom: 42px;
+
+    }
 
 
 }
