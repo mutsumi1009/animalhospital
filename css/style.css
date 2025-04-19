@@ -50,10 +50,11 @@ img {
     height: 50px;
     background-color: #fff;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
+
     @media screen and (max-width: 767px) {
         /* height: 30px; */
 
@@ -88,11 +89,7 @@ img {
     @media screen and (max-width: 767px) {
         font-size: 2rem;
     }
-
 }
-
-
-
 
 .logo-text {
     display: inline-block;
@@ -142,21 +139,19 @@ img {
     font-size: 1.4rem;
     transition: color 0.3s ease;
     height: 100%;
-}
 
-
-@media screen and (max-width: 767px) {
-    .header__nav-list a {
+    @media screen and (max-width: 767px) {
         position: absolute;
         width: 200px;
         height: 33px;
         left: 55px;
         top: 8px;
         font-size: 2rem;
-        line-height: 33px;;
+        line-height: 33px;
     }
 }
-.main{
+
+.main {
     margin-top: 50px;
 }
 
@@ -170,9 +165,7 @@ img {
     @media screen and (max-width: 767px) {
         aspect-ratio: 375 / 550;
     }
-
 }
-
 
 @media screen and (max-width: 767px) {}
 
@@ -185,6 +178,17 @@ img {
     background: rgba(255, 255, 255, 0.7);
     padding: calc(23 / 1080*100vw) calc(35 / 1080*100vw) calc(23 / 1080*100vw) calc(99 / 1080*100vw);
     margin-top: calc(14 / 1080*100vw);
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        right: : calc(64 / 375 * 100vw);
+        padding: calc(16 / 375 * 100vw);
+        transform: none;
+        margin-top: 0;
+
+    }
 }
 
 .fv__lead {
@@ -192,12 +196,80 @@ img {
     line-height: 3rem;
     text-align: left;
     font-size: calc(25 / 1080*100vw);
+
+    @media screen and (max-width: 767px) {
+        font-size: 2rem;
+    }
 }
 
-.fv__title {
-    color: #0d96A0;
-    font-weight: 700;
-    line-height: normal;
-    font-size: calc(40 / 1080*100vw);
-    margin-top: calc(8 / 1080*100vw);
-}
+    .fv__title {
+        color: #0d96A0;
+        font-weight: 700;
+        line-height: normal;
+        font-size: calc(40 / 1080*100vw);
+        margin-top: calc(8 / 1080*100vw);
+
+        @media screen and (max-width: 767px) {
+            font-size: 3rem;
+        }
+    }
+
+        .sp-br {
+            display: inline;
+        }
+
+        @media screen and (min-width: 767px) {
+            .sp-br {
+                display: none;
+            }
+        }
+
+        /* 挨拶 --> */
+        .greeting {
+            padding: 60px 16px;
+            text-align: center;
+            background: #FFFFFF;
+
+            @media screen and (max-width: 767px) {
+                padding: 49px 20px 17px 20px;
+            }
+        }
+
+        .greeting .inner {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .greeting__title {
+            font-size: 2.4rem;
+            color: #0d96A0;
+
+            @media screen and (max-width: 767px) {
+                font-size: 2.5rem;
+                /* margin: 49px 20px 0 20px; */
+            }
+        }
+
+        .greeting__text {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 33px;
+            text-align: center;
+            color: #505050;
+            margin-top: 15px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.6rem;
+                left: 20px;
+                margin-top: 17px;
+            }
+        }
+
+        .greeting__icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .paw-icon {
+            height: auto;
+        }
