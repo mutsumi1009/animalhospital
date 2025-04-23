@@ -127,6 +127,7 @@ img {
 
 .header__img {
     width: 25px;
+
     @media screen and (max-width: 767px) {}
 }
 
@@ -385,7 +386,7 @@ img {
 /* サービス */
 .service {
     background-color: #FFFFFF;
-    padding-block: 64px 59px;
+    padding-block: 64px 0;
 
 }
 
@@ -393,13 +394,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 19px;
+    margin-bottom: 54px;
     gap: 16px;
+    height: 36px;
 }
 
 .service__title {
     font-size: 2.5rem;
     font-weight: 700;
+    margin: 45px 0 46px;
 }
 
 
@@ -457,78 +460,85 @@ img {
     }
 
 }
+
 /* お知らせ */
 
-.news{
-    position: absolute;
+.news {
+    padding-block: 63px 46px;
     background: rgba(13, 150, 160, 0.101961);
-} 
+
+}
 
 .news__head {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    gap: 7px;
+    height: 25px;
+    margin-bottom: 46px;
 }
 
 .news__icon {
-display: inline-flex;
-align-items: center;
+    display: inline-flex;
+    align-items: center;
 }
 
 .news__title {
-font-size: 2.5rem;
-font-weight:700 ;
-margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
 }
 
-.news__head {
-height: 36px;
-left: calc(50% - 100px/2);
-font-weight: 700;
-font-size: 25rem;
-line-height: 30px;
-text-align: center;
-}
 
 .news__list {
-list-style: none;
-padding: o;
-margin: 0;
-border-top: 1px solid#ccc;
+    list-style: none;
+    padding: o;
+    margin: 0;
+    border-top: 1px solid#ccc;
 }
 
 
 .news__item {
     border-bottom: 1px solid #ccc;
-
-}
-
-.news__link {
+  }
+  
+  .news__link {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+    padding-block: 16px;
     gap: 24px;
-    padding-block: 12px;
-}
-
-.news__date {
-    min-width: 120px;
+  }
+  
+  .news__date {
+    min-width: 92px;
+    font-size: 1.7rem;
     font-weight: 700;
-    color: #0d96A0;
-
-}
-
-.news__text {
-    font-weight: 500;
-    text-decoration: underline;
-
-}
-
-.news__desc {
-    color: #505050;
-    font-size: 1.5rem;
-    margin: 0;
+    line-height: calc(25 / 17);
+  }
+  
+  .news__content {
     flex: 1;
-}
-
+    display: block;
+    padding-left: 0;
+  }
+  
+  .news__text {
+    display: inline; 
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: #0D96A0;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: calc(25 / 20);
+  }
+  
+  .news__desc {
+    display: inline; 
+    font-size: 1.7rem;
+    color: #505050;
+    line-height: calc(30 / 17);
+    margin-left: 3em;
+  
