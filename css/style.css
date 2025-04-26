@@ -62,7 +62,6 @@ img {
 
     @media screen and (max-width: 767px) {
         margin-bottom: 42px;
-
     }
 }
 
@@ -475,7 +474,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 20px;
     height: 25px;
     margin-bottom: 46px;
 }
@@ -538,7 +537,8 @@ img {
 .news__content {
     flex: 1;
     display: flex;
-    gap: 25px flex-wrap: wrap;
+    /* gap: 25px; */
+    flex-wrap: wrap;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -575,5 +575,122 @@ img {
         display: block;
         margin-left: 0;
         flex-direction: column;
+    }
+}
+
+/* アクセス */
+.access {
+    background: #FFFFFF;
+    /* padding-block: 70px; */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.access__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.access__head {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 25px;
+    margin-block: 46px;
+}
+
+
+.access__icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.access__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: calc(30 / 25);
+    text-align: center;
+}
+
+.access__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: left;
+    flex: 1;
+    /* margin-left: 46px; */
+}
+
+.access__name {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    margin-bottom: 15px;
+}
+
+.access__address {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    margin-bottom: 14px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.6rem;
+    }
+}
+
+.access__tel {
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    margin-bottom: 8px;
+
+}
+
+.access__tel span {
+    color: #0D96A0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: calc(40 / 25);
+}
+
+.access__email {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    margin-bottom: 27px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.6rem;
+    }
+}
+
+.access__time {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(60 / 18);
+    border-block: 1px solid #ccc;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.6rem;
+    }
+}
+
+.access__map iframe {
+    aspect-ratio: 440 / 300;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        width: 335px;
+        height: 222px;
     }
 }
