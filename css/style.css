@@ -117,8 +117,9 @@ img {
     }
 }
 
-.logo-text {
+.logo__text {
     display: inline-block;
+    padding: 2px;
 }
 
 @media screen and (max-width: 767px) {}
@@ -164,6 +165,7 @@ img {
     font-size: 1.4rem;
     transition: color 0.3s ease;
     height: 100%;
+    padding: 1px;
 
     @media screen and (max-width: 767px) {
         position: absolute;
@@ -385,7 +387,8 @@ img {
 /* サービス */
 .service {
     background-color: #FFFFFF;
-    padding-block: 64px 0;
+    padding-top: calc(64 / 1080 * 100vw);
+    padding-bottom: calc(0 / 1080 * 100vw);
 
     @media screen and (max-width: 767px) {}
 
@@ -395,15 +398,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 54px;
-    gap: 16px;
+    margin-bottom: calc(54 / 1080 * 100vw);
+    gap: calc(16 / 1080 * 100vw);
     height: 36px;
 }
 
 .service__title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 45px 0 46px;
+    margin-top: calc(45 / 1080 * 100vw);
+    margin-bottom: calc(46 / 1080 * 100vw);
 }
 
 
@@ -458,6 +462,7 @@ img {
 
     @media screen and (max-width: 767px) {
         line-height: calc(30 / 16);
+        text-align: left;
     }
 
 }
@@ -567,7 +572,7 @@ img {
     font-size: 1.7rem;
     color: #505050;
     line-height: calc(30 / 17);
-    margin-left: 5em;
+    margin-left: 3em;
     flex: 1;
 
     @media screen and (max-width: 767px) {
@@ -687,10 +692,193 @@ img {
 
 .access__map iframe {
     aspect-ratio: 440 / 300;
-    width: 100%;
+    width: 440px;
+    height: 300px;
 
     @media screen and (max-width: 767px) {
-        width: 335px;
-        height: 222px;
+        width: 100%;
+        height: auto;
     }
 }
+
+/* お問い合わせ */
+.contact {
+    background: rgba(13, 150, 160, 0.101961);
+    padding-block: calc(62 / 1080 * 100vw) calc(31 / 1080 * 100vw);
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 20px;
+    }
+}
+
+.contact__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.contact__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: calc(30 / 25);
+    text-align: center;
+
+}
+
+/* margin-inline: auto; */
+
+/* margin-bottom: calc(31 / 1080 * 100vw); */
+@media screen and (max-width: 767px) {}
+
+}
+
+.contact__icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.contact__icon img {
+    width: 26px;
+    height: 25px;
+
+}
+
+.contact__lead {
+    text-align: center;
+    font-size: calc(16 / 1080 * 100vw);
+    margin-block: calc(31 / 1080 * 100vw) calc(39 / 1080 * 100vw);
+    line-height: 1.8;
+
+    @media screen and (max-width: 767px) {
+        font-size: calc(16 / 375 * 100vw);
+        line-height: calc(30 / 16);
+        margin-block: 49px 34px;
+        /* margin-bottom: 34px; */
+        max-width: 335px;
+        text-align: left;
+    }
+}
+
+.contact__form {
+    max-width: 711px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: calc(24 /1080 * 100vw);
+
+    @media screen and (max-width: 767px) {}
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 29px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+}
+
+    .contact__item--textarea {
+        align-items: flex-start;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+        }
+    }
+
+    .contact__label {
+        display: inline-flex;
+        width: 140px;
+        font-size: calc(20 / 1080 * 100vw);
+        font-weight: 600;
+        text-align: left;
+        align-items: flex-start;
+
+        @media screen and (max-width: 767px) {
+            font-size: calc(18 / 375 * 100vw);
+            /* width: auto; */
+            
+        }
+    }
+
+    .contact__input,
+    .contact__textarea {
+        width: 100%;
+        max-width: 711px;
+        padding: calc(10 / 1080 * 100vw);
+        font-size: 1.6rem;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 4px;
+        flex: 1;
+
+        @media screen and (max-width: 767px) {
+            max-width: 335px;
+            margin: 0 auto;
+            flex: unset;
+        }
+    }
+
+    .access__input {
+        height: 40px;
+
+    }
+
+    .contact__textarea {
+        height: 300px;
+        resize: vertical;
+
+        @media screen and (max-width: 767px) {
+            /* display: flex;
+        flex-direction: column; */
+        }
+    }
+
+    .contact__label--textarea {
+        margin-top: 1opx;
+    }
+
+    .contact__submit {
+        text-align: center;
+        margin-top: calc(50 / 1080 * 100vw);
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    .contact__button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-size: calc(25 / 1080 * 100vw);
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #0D96A0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 200px;
+        height: 50px;
+
+        @media screen and (max-width: 767px) {
+            width: 335px;
+            height: 41px;
+            font-size: calc(18 / 375 * 100vw);
+        }
+    }
+
+    .contact__button:hover {
+        background-color: #0b7a85;
+    }
