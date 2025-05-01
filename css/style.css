@@ -323,7 +323,7 @@ img {
 }
 
 .strength__items {
-    margin-top: 40px;
+    margin-top: 45px;
 
     @media screen and (max-width: 767px) {}
 
@@ -332,7 +332,7 @@ img {
 .strength__item {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: left;
     column-gap: calc(45 / 1080 * 100%);
 
     @media screen and (max-width: 767px) {
@@ -346,11 +346,13 @@ img {
 
 .strength__item:not(:first-of-type) {
     margin-top: 50px;
-
 }
 
+
 .strength__img {
-    width: calc(440 / 1080 * 100%);
+    width: 440px;
+    flex-shrink: 0;
+    margin-left: 7px;
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -358,13 +360,12 @@ img {
 }
 
 .strength__img img {
+
     aspect-ratio: 440 / 247;
 
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        height: auto;
-    }
+    @media screen and (max-width: 767px) {}
 }
+
 
 .strength__body {
     max-width: 396px;
@@ -375,7 +376,7 @@ img {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: calc(33 / 22);
-    margin-top: 50px;
+    margin-top: 2px;
 
     @media screen and (max-width: 767px) {
         font-size: 2.0rem;
@@ -397,11 +398,42 @@ img {
     }
 }
 
+/* staff個別  */
+.strength--staff .strength__subtitle {
+    margin: 0;
+}
+
+.strength--staff .strength__text {
+    margin-block: 19px 0;
+}
+
+
+/* エキゾチック個別  */
+.strength--exotic .strength__subtitle {
+    margin: 4px 4px;
+}
+
+.strength--exotic .strength__text {
+    margin-top: 20px;
+}
+
+
+
+/* 往診向け */
+.strength---visit .strength__subtitle {}
+
+.strength--visit .strength__text {
+    margin-top: 18px;
+}
+
+
+
 /* サービス */
 .service {
     background-color: #FFFFFF;
     padding-top: calc(64 / 1080 * 100vw);
-    padding-bottom: calc(0 / 1080 * 100vw);
+    /* padding-bottom: calc(0 / 1080 * 100vw); */
+    
 
     @media screen and (max-width: 767px) {}
 
@@ -413,7 +445,7 @@ img {
     align-items: center;
     margin-bottom: calc(54 / 1080 * 100vw);
     gap: calc(16 / 1080 * 100vw);
-    height: 36px;
+    height: 44px;
 }
 
 .service__title {
@@ -438,7 +470,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     list-style: none;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
 
     @media screen and (max-width: 767px) {
         grid-template-columns: 1fr;
@@ -455,10 +487,10 @@ img {
     font-weight: 700;
     line-height: calc(30 / 20);
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 30px;
+        margin-top: 14px;
     }
 }
 
@@ -484,7 +516,7 @@ img {
 /* お知らせ */
 
 .news {
-    padding-block: 63px 46px;
+    padding-block: 40px 46px;
     background: rgba(13, 150, 160, 0.101961);
 
 }
@@ -511,6 +543,7 @@ img {
 }
 
 
+
 .news__list {
     list-style: none;
     padding: 0;
@@ -520,7 +553,8 @@ img {
 
 
 .news__item {
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
     padding-left: 27px;
 }
 
@@ -613,9 +647,9 @@ img {
     gap: 40px;
 
     @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center; 
-    gap: 32px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
     }
 }
 
@@ -646,7 +680,7 @@ img {
 
     @media screen and (max-width: 767px) {
         min-width: 335px;
-    
+
     }
 }
 
@@ -751,12 +785,9 @@ img {
 
 }
 
-/* margin-inline: auto; */
-
-/* margin-bottom: calc(31 / 1080 * 100vw); */
 @media screen and (max-width: 767px) {}
 
-}
+
 
 .contact__icon {
     display: flex;
@@ -866,10 +897,11 @@ img {
         flex-direction: column; */
     }
 }
+
 .contact__textarea {
     resize: none;
-  }
-  
+}
+
 
 .contact__label--textarea {
     margin-top: 1opx;
