@@ -332,7 +332,7 @@ img {
 .strength__item {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     column-gap: calc(45 / 1080 * 100%);
 
     @media screen and (max-width: 767px) {
@@ -352,7 +352,7 @@ img {
 .strength__img {
     width: 440px;
     flex-shrink: 0;
-    margin-left: 7px;
+    /* margin-left: 7px; */
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -433,7 +433,7 @@ img {
     background-color: #FFFFFF;
     padding-top: calc(64 / 1080 * 100vw);
     /* padding-bottom: calc(0 / 1080 * 100vw); */
-    
+
 
     @media screen and (max-width: 767px) {}
 
@@ -443,7 +443,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(54 / 1080 * 100vw);
+    margin-bottom: calc(44 / 1080 * 100vw);
     gap: calc(16 / 1080 * 100vw);
     height: 44px;
 }
@@ -470,16 +470,16 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     list-style: none;
-    margin-bottom: 36px;
+    margin-bottom: 15px;
 
     @media screen and (max-width: 767px) {
         grid-template-columns: 1fr;
     }
 }
 
-.service__item {
+/* .service__item {
     text-align: center;
-}
+} */
 
 
 .service__subtitle {
@@ -487,7 +487,7 @@ img {
     font-weight: 700;
     line-height: calc(30 / 20);
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 
     @media screen and (min-width: 768px) {
         margin-top: 14px;
@@ -516,7 +516,7 @@ img {
 /* お知らせ */
 
 .news {
-    padding-block: 40px 46px;
+    padding: 69px 46px 70px;
     background: rgba(13, 150, 160, 0.101961);
 
 }
@@ -555,14 +555,14 @@ img {
 .news__item {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
-    padding-left: 27px;
+    padding: 0 18px 1px 18px
 }
 
 .news__link {
     display: flex;
-    align-items: flex-start;
-    padding-block: 16px;
-    gap: 24px;
+    align-items: center;
+    padding-block: 14px;
+    /* gap: 24px; */
     flex-wrap: wrap;
 
     @media screen and (max-width: 767px) {
@@ -590,6 +590,7 @@ img {
 .news__content {
     flex: 1;
     display: flex;
+    align-items: center;
     /* gap: 25px; */
     flex-wrap: wrap;
 
@@ -638,13 +639,14 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 3px;
 }
 
 .access__inner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 26px;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -658,7 +660,9 @@ img {
     justify-content: center;
     gap: 20px;
     height: 25px;
-    margin-block: 46px;
+    margin: 64px auto 54px;
+}
+
 }
 
 
@@ -676,12 +680,19 @@ img {
 
 .access__map {
     flex: 1;
-    /* min-width: 440px; */
-
+    min-width: 440px;
+    
     @media screen and (max-width: 767px) {
         min-width: 335px;
-
+        
     }
+}
+.access__map iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border: 0;
+
 }
 
 .access__content {
@@ -690,14 +701,14 @@ img {
     margin-bottom: 50px;
     text-align: left;
     flex: 1;
-    /* margin-left: 46px; */
+    margin-left: 21px;
 }
 
 .access__name {
     font-weight: 700;
     font-size: 2.2rem;
     line-height: calc(33 / 22);
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .access__address {
@@ -706,6 +717,7 @@ img {
     line-height: calc(27 / 18);
     margin-bottom: 14px;
     white-space: nowrap;
+
 
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
@@ -739,11 +751,13 @@ img {
     }
 }
 
-.access__time {
+/* アクセス診療時間 */
+.access__open {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: calc(40 / 18);
-    border-block: 1px solid #707070;
+    border-block-start: 1px solid #707070;
+    margin: 14px 0 0 4px;
 
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
@@ -751,13 +765,24 @@ img {
     }
 }
 
-.access__map iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    border: 0;
-
+/* 休診日（下） */
+.access__close {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    border-bottom: 1px solid #707070;
+    padding: 7px 0 19px 3px;
+    margin: 0;
 }
+
+@media screen and (max-width: 767px) {
+    .access__time--close {
+        font-size: 1.6rem;
+        line-height: calc(27 / 16);
+    }
+}
+
+
 
 /* お問い合わせ */
 .contact {
