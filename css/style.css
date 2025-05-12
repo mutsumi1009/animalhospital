@@ -257,10 +257,11 @@ img {
     display: inline;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .sp-br {
         display: none;
     }
+    
 }
 
 /* 挨拶 --> */
@@ -317,6 +318,10 @@ img {
         margin-top: 16px;
         text-align: left;
         line-height: 3.0rem;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        text-align: center;
     }
 }
 
@@ -377,6 +382,7 @@ img {
 
 .strength__item:not(:first-of-type) {
     margin-top: 50px;
+
 }
 
 
@@ -450,10 +456,10 @@ img {
 
 /*強み エキゾチック個別  */
 .strength--exotic .strength__subtitle {
-    margin: 18px 7px;
+    margin: 4px 10px;
 
     @media screen and (max-width: 767px) {
-        margin: 19px px;
+        margin: 19px 7px;
     }
 }
 
@@ -796,6 +802,17 @@ img {
         align-items: flex-start;
         gap: 0;
     }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 26px;
+        flex-wrap: wrap;
+        /* 狭くなったら自動で折り返す */
+
+
+    }
 }
 
 .access__head {
@@ -833,9 +850,16 @@ img {
 
     @media screen and (max-width: 767px) {
         min-width: auto;
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        flex: 1;
+        min-width: auto;
+        width: 48%;
+        /* 横並びならこのくらい */
     }
 }
+
 
 .access__map iframe {
     width: 100%;
@@ -867,8 +891,8 @@ img {
         box-sizing: border-box;
         display: flex;
         justify-content: flex-start;
-
     }
+
 }
 
 .access__name {
@@ -1053,6 +1077,12 @@ img {
         text-align: left;
         margin-inline: -11px;
     }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 1.6rem;
+      
+    }
+
 }
 
 .contact__form {
@@ -1101,7 +1131,10 @@ img {
         font-size: calc(18 / 375 * 100vw);
         margin-bottom: calc(4 / 375 * 100vw);
         margin-left: calc(-11 / 375 * 100vw);
-
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 1.8rem;
+      
     }
 }
 
@@ -1167,7 +1200,10 @@ img {
     @media screen and (max-width: 767px) {
         width: 100%;
         margin-inline: calc(-11 / 375 * 100vw);
-
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        margin-inline: 0;
+        
     }
 }
 
@@ -1192,7 +1228,10 @@ img {
         height: 41px;
         margin-bottom: calc(6 / 375 *100vw);
         font-size: calc(19 / 375 * 100vw);
-
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 1.9rem;
+        
     }
 }
 
