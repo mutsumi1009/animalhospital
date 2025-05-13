@@ -261,7 +261,7 @@ img {
     .sp-br {
         display: none;
     }
-    
+
 }
 
 /* 挨拶 --> */
@@ -565,7 +565,12 @@ img {
         grid-template-columns: 1fr;
         margin-bottom: 38px;
     }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        gap: 4%;
+    }
 }
+
 
 /* .service__item {
     text-align: center;
@@ -786,8 +791,8 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* margin-bottom: 20px; */
-    padding-block: calc(3 / 1080 * 100vw);
+    margin-bottom: 20px;
+    /* padding-block: calc(3 / 1080 * 100vw); */
 
     @media screen and (max-width: 767px) {
         padding-block: calc(40 / 375 * 100vw);
@@ -824,7 +829,7 @@ img {
     justify-content: center;
     gap: 20px;
     height: 25px;
-    margin: 64px auto 54px;
+    margin: 65px auto 54px;
 
     @media screen and (max-width: 767px) {
         margin-top: calc(41 / 375 * 100vw);
@@ -1037,7 +1042,7 @@ img {
     font-weight: 700;
     line-height: calc(30 / 25);
     text-align: center;
-    padding: 16px;
+    padding: 13px;
 
     @media screen and (max-width: 767px) {
         margin-top: calc(21 / 375 * 100vw);
@@ -1069,7 +1074,7 @@ img {
     font-size: calc(17 / 1080 * 100vw);
     margin-block: calc(17 / 1080 * 100vw) calc(37 / 1080 * 100vw);
     line-height: 1.8;
-    margin: 14px 0 0;
+    margin: 18px 0 0;
 
 
     @media screen and (max-width: 767px) {
@@ -1084,7 +1089,7 @@ img {
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: 1.6rem;
-      
+
     }
 
 }
@@ -1136,9 +1141,10 @@ img {
         margin-bottom: calc(4 / 375 * 100vw);
         margin-left: calc(-11 / 375 * 100vw);
     }
+
     @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: 1.8rem;
-      
+
     }
 }
 
@@ -1205,9 +1211,10 @@ img {
         width: 100%;
         margin-inline: calc(-11 / 375 * 100vw);
     }
+
     @media screen and (min-width: 600px) and (max-width: 767px) {
         margin-inline: 0;
-        
+
     }
 }
 
@@ -1233,9 +1240,10 @@ img {
         margin-bottom: calc(6 / 375 *100vw);
         font-size: calc(19 / 375 * 100vw);
     }
+
     @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: 1.9rem;
-        
+
     }
 }
 
@@ -1258,7 +1266,7 @@ img {
     flex-wrap: wrap;
     gap: 14px;
     list-style: none;
-    margin: 0 0 20px;
+    margin: 0 0 21px;
     padding-top: 68px;
 
     @media screen and (max-width: 767px) {
