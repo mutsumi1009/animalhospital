@@ -191,6 +191,7 @@ img {
     align-items: center;
     /* padding: 1px; */
     color: #666666;
+    position: relative;
 
     @media screen and (max-width: 767px) {
         position: absolute;
@@ -201,6 +202,16 @@ img {
         font-size: 2rem;
         line-height: 33px;
     }
+}
+
+.header__nav-list a::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    z-index: 0;
 }
 
 .header__nav-list a:hover,
