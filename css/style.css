@@ -530,8 +530,8 @@ img {
 
 
     @media screen and (max-width: 767px) {
-        /* margin-top: -30px; */
-        padding-block: calc(40 / 375 * 100vw);
+        margin-top: -32px;
+        padding-block: calc(74 / 375 * 100vw);
     }
 
 }
@@ -547,7 +547,7 @@ img {
 
     @media screen and (max-width: 767px) {
         gap: calc(15/ 375 * 100vw);
-        margin: 17px;
+        margin-top: -32px;
     }
 }
 
@@ -556,7 +556,10 @@ img {
     font-weight: 700;
     margin-top: calc(23 / 1080 * 100vw);
     margin-bottom: calc(29 / 1080 * 100vw);
+    
 }
+
+
 
 .service__icon {
     /* position: absolute;
@@ -593,7 +596,7 @@ img {
 
     @media screen and (max-width: 767px) {
         grid-template-columns: 1fr;
-        margin-bottom: 38px;
+        margin-bottom: 82px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -624,9 +627,10 @@ img {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
 
+/* ちゅうかん */
     @media screen and (min-width: 768px) {
         line-height: calc(30 / 17);
-        margin-bottom: calc(42 / 1080 * 100vw);
+        margin-bottom: calc(82 / 1080 * 100vw);
 
     }
 
@@ -635,6 +639,7 @@ img {
         line-height: calc(30 / 16);
         font-size: 1.6rem;
         margin-top: calc(7 / 375 * 100vw);
+        margin-bottom: calc( / 375 * 100vw);
     }
 }
 
@@ -644,7 +649,7 @@ img {
 
     .service__item--hotel .service__img,
     .service__item--trimming .service__img {
-        margin-top: calc(-36 / 375 * 100vw);
+        margin-top: calc(-44 / 375 * 100vw);
     }
 }
 
@@ -664,7 +669,7 @@ img {
     background: rgba(13, 150, 160, 0.101961);
 
     @media screen and (max-width: 767px) {
-        padding: 49px 4px 56px 8px
+        padding: 49px 4px 52px 8px
     }
 }
 
@@ -825,7 +830,7 @@ img {
     /* padding-block: calc(3 / 1080 * 100vw); */
 
     @media screen and (max-width: 767px) {
-        padding-block: calc(40 / 375 * 100vw);
+        padding-block: calc(4 / 375 * 100vw);;
     }
 }
 
@@ -848,7 +853,6 @@ img {
         justify-content: space-between;
         gap: 26px;
         flex-wrap: wrap;
-        /* 狭くなったら自動で折り返す */
 
 
     }
@@ -1061,7 +1065,7 @@ img {
     gap: 6px;
 
     @media screen and (max-width: 767px) {
-        gap: 4px;
+        /* gap: 4px; */
 
     }
 }
@@ -1075,7 +1079,7 @@ img {
     padding: 13px;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(21 / 375 * 100vw);
+        margin-top: calc(18 / 375 * 100vw);
 
 
     }
@@ -1110,7 +1114,7 @@ img {
     @media screen and (max-width: 767px) {
         font-size: calc(16 / 375 * 100vw);
         line-height: calc(30 / 16);
-        margin-block: 27px 34px;
+        margin-block: 29px 34px;
         /* margin-bottom: 34px; */
         max-width: 335px;
         text-align: left;
@@ -1267,8 +1271,8 @@ img {
     @media screen and (max-width: 767px) {
         width: 335px;
         height: 41px;
-        margin-bottom: calc(6 / 375 *100vw);
-        font-size: calc(19 / 375 * 100vw);
+        margin-bottom: calc(8 / 375 *100vw);
+        font-size: calc(20 / 375 * 100vw);
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1347,7 +1351,7 @@ img {
 
     @media screen and (max-width: 767px) {
         font-size: calc(16 / 375 * 100vw);
-        padding-bottom: 17px;
+        padding-bottom: 21px;
     }
 
 }
