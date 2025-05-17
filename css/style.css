@@ -291,8 +291,14 @@ img {
     .sp-br {
         display: none;
     }
-
 }
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .sp-br {
+        display: none;
+    }
+}
+
 
 /* 挨拶 --> */
 .greeting {
@@ -351,7 +357,10 @@ img {
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
-        text-align: center;
+        text-align: left;
+        margin-inline: auto;
+        max-width: 75%;
+
     }
 }
 
@@ -402,6 +411,14 @@ img {
     column-gap: calc(45 / 1080 * 100%);
 
     @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 40px;
         display: block;
     }
 }
@@ -848,14 +865,14 @@ img {
         gap: 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        gap: 26px;
+        gap: 30px;
         flex-wrap: wrap;
-
-
+        align-items: flex-start;
+        padding-inline: 16px;
     }
 }
 
@@ -898,9 +915,9 @@ img {
 
     @media screen and (min-width: 600px) and (max-width:767px) {
         flex: 1;
-        min-width: auto;
-        width: 48%;
-        
+
+        max-width: 48%;
+
     }
 }
 
@@ -915,6 +932,14 @@ img {
         height: 222px;
         display: block;
         border: 0;
+        margin-inline: auto;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        max-width: 100%;
+        display: block;
         margin-inline: auto;
     }
 }
@@ -937,6 +962,12 @@ img {
         justify-content: flex-start;
     }
 
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        flex: 1;
+        max-width: 48%;
+        margin-left: 0;
+    }
+
 }
 
 .access__name {
@@ -949,7 +980,10 @@ img {
         margin-top: calc(21 / 375 * 100vw);
         margin-bottom: calc(12 / 375 * 100vw);
         margin-left: 0;
+    }
 
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        margin-top: 0;
     }
 }
 
@@ -963,7 +997,10 @@ img {
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
         margin: 0 0 calc(12 / 375 * 100vw) 0;
+    }
 
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 1.6rem;
     }
 }
 
@@ -978,6 +1015,10 @@ img {
         padding-top: calc(0 / 375 * 100vw);
         margin: -7px;
         font-size: 1.6rem;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        padding-left: calc(5 / 600 * 100vw);
     }
 }
 
@@ -1117,13 +1158,14 @@ img {
         line-height: calc(30 / 16);
         margin-block: 26px 34px;
         /* margin-bottom: 34px; */
-        max-width: 335px;
+        /* max-width: 335px; */
         text-align: left;
         margin-inline: -11px;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 767px) {
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
         font-size: 1.6rem;
+        max-width: 100%;
 
     }
 
@@ -1209,7 +1251,7 @@ img {
     flex: 1;
 
     @media screen and (max-width: 767px) {
-        max-width: 335px;
+        /* max-width: 335px; */
         margin: 0 auto;
         flex: unset;
         margin-top: 0;
@@ -1249,7 +1291,6 @@ img {
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
         margin-inline: 0;
-
     }
 }
 
@@ -1278,7 +1319,10 @@ img {
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: 1.9rem;
+    }
 
+    @media screen and (max-width: 374px) {
+        width: 260px;
     }
 }
 
@@ -1359,7 +1403,8 @@ img {
         font-size: calc(16 / 375 * 100vw);
         padding-bottom: 21px;
     }
-    @media screen and (min-width: 600px) and (max-width: 767px)  {
+
+    @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: calc(16 / 600 * 100vw);
     }
 
