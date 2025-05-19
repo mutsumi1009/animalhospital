@@ -849,7 +849,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 18px;
+    margin-bottom: 21px;
     /* padding-block: calc(3 / 1080 * 100vw); */
 
     @media screen and (max-width: 767px) {
@@ -1103,7 +1103,7 @@ img {
     padding: calc(48 / 1080 * 100vw) calc(31 / 1080 * 100vw) calc(41 / 1080 * 100vw);
 
     @media screen and (max-width: 767px) {
-        padding-bottom: calc(13 / 375 * 100vw);
+        padding-bottom: calc(8 / 375 * 100vw);
     }
 
     @media screen and (min-width: 768px) {
@@ -1140,7 +1140,7 @@ img {
 
 .contact__icon {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 5px;
     vertical-align: middle;
 
     @media screen and (max-width: 767px) {
@@ -1161,7 +1161,7 @@ img {
     font-size: calc(17 / 1080 * 100vw);
     margin-block: calc(17 / 1080 * 100vw) calc(37 / 1080 * 100vw);
     line-height: 1.8;
-    margin: 11px 0 0;
+    margin: 9px 0 0;
 
 
     @media screen and (max-width: 767px) {
@@ -1239,7 +1239,7 @@ img {
 /* コンタクトフォーム個別 */
 .contact__item--name {
     @media screen and (max-width: 767px) {
-        margin-top: calc(-10 / 335 * 100vw);
+        margin-top: calc(-7 / 335 * 100vw);
 
     }
 }
@@ -1298,6 +1298,7 @@ img {
     @media screen and (max-width: 767px) {
         width: 100%;
         margin-inline: calc(-11 / 375 * 100vw);
+        margin-top: 11px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1324,8 +1325,8 @@ img {
     @media screen and (max-width: 767px) {
         width: 335px;
         height: 41px;
-        margin-bottom: calc(8 / 375 *100vw);
-        font-size: calc(20 / 375 * 100vw);
+        margin-bottom: calc(3 / 375 *100vw);
+        font-size: calc(19 / 375 * 100vw);
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1389,7 +1390,7 @@ img {
     max-width: 737px;
     height: 1px;
     background-color: #ffffff;
-    margin: 17px auto;
+    margin: 19px auto;
 }
 
 .footer_bottom {
