@@ -259,8 +259,8 @@ img {
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.7);
-    padding: calc(19 / 1080*100vw) calc(37 / 1080*100vw) calc(23 / 1080*100vw) calc(99 / 1080*100vw);
-    margin-top: calc(8 / 1080*100vw);
+    padding: calc(29 / 1080*100vw) calc(37 / 1080*100vw) calc(21 / 1080*100vw) calc(99 / 1080*100vw);
+    margin-block: calc(7 / 1080*100vw);
     box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
@@ -281,7 +281,7 @@ img {
     line-height: 3rem;
     text-align: left;
     font-size: calc(25 / 1080 * 100vw);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     @media screen and (max-width: 767px) {
         font-size: calc(20 / 375 *100vw);
@@ -294,7 +294,7 @@ img {
     font-weight: 700;
     line-height: normal;
     font-size: calc(40 / 1080*100vw);
-    margin-top: calc(8 / 1080*100vw);
+    /* margin-top: calc(8 / 1080*100vw); */
 
     @media screen and (max-width: 767px) {
         font-size: calc(30 / 375*100vw);
@@ -1065,7 +1065,7 @@ img {
     padding: calc(48 / 1080 * 100vw) calc(31 / 1080 * 100vw) calc(41 / 1080 * 100vw);
 
     @media screen and (max-width: 767px) {
-        padding-bottom: calc(6 / 375 * 100vw);
+        padding-bottom: calc(5 / 375 * 100vw);
     }
 
     @media screen and (min-width: 768px) {
@@ -1280,7 +1280,9 @@ img {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border: 2px solid #0D96A0;
+    transition: background-color 0.3s, color 0.3s;
+
     width: 200px;
     height: 50px;
 
@@ -1301,7 +1303,8 @@ img {
 }
 
 .contact__button:hover {
-    background-color: #0b7a85;
+    background-color: #ffffff;
+    color: #0D96A0;
 }
 
 /* フッター */
@@ -1324,7 +1327,7 @@ img {
 
     @media screen and (max-width: 767px) {
         gap: 20px;
-        padding-top: 49px;
+        padding-top: 47px;
         margin: 0 0 23px;
         row-gap: 7px;
     }
@@ -1390,4 +1393,3 @@ img {
     align-items: center;
     gap: 12px;
 }
-
