@@ -1185,11 +1185,13 @@ img {
     text-align: left;
     align-items: flex-start;
     margin: 8px 0 7px;
+  
 
     @media screen and (max-width: 767px) {
         font-size: calc(18 / 375 * 100vw);
         margin-bottom: calc(4 / 375 * 100vw);
         margin-left: calc(-11 / 375 * 100vw);
+        white-space: nowrap;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1266,6 +1268,13 @@ img {
     @media screen and (min-width: 600px) and (max-width: 767px) {
         margin-inline: 0;
     }
+
+    @media screen and (max-width: 374px) {
+          margin-inline: 0; 
+          text-align: center;
+        }
+      
+
 }
 
 .contact__button {
@@ -1299,6 +1308,8 @@ img {
 
     @media screen and (max-width: 374px) {
         width: 260px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
