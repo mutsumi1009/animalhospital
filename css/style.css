@@ -661,7 +661,12 @@ img {
     @media screen and (max-width: 767px) {
         padding: 49px 4px 54px 8px
     }
+
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+        padding-inline: 0;
+    }
 }
+
 
 .news__head {
     display: flex;
@@ -812,12 +817,12 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 19px;
+    margin-bottom: 69px;
     /* padding-block: calc(3 / 1080 * 100vw); */
 
     @media screen and (max-width: 767px) {
         padding-block: calc(3 / 375 * 100vw);
-        ;
+        margin-bottom: 21px;
     }
 }
 
@@ -825,23 +830,23 @@ img {
 .access__inner {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 26px;
+    /* align-items: flex-start; */
+    gap: 25px;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         gap: 0;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 767px) {
+    /* @media screen and (min-width:768px) and (max-width: 1023px) {
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
         flex-wrap: wrap;
         align-items: flex-start;
         padding-inline: 16px;
-    }
+    } */
 }
 
 .access__head {
@@ -874,53 +879,33 @@ img {
 }
 
 .access__map {
-    flex: 1;
+    /* flex: 1; */
     /* min-width: 440px; */
+    width: 50%;
 
     @media screen and (max-width: 767px) {
-        min-width: auto;
-    }
-
-    @media screen and (min-width: 600px) and (max-width: 1023px) {
-        flex: 1;
         width: 100%;
-        max-width: 100%q;
-        min-width: auto;
     }
 
-    @media screen and (min-width: 1024px) {
-        min-width: 440px;
-    }
+
 }
 
 
 .access__map iframe {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    border: 0;
+    height: 100%;
+    aspect-ratio: 440 / 300;
 
     @media screen and (max-width: 767px) {
         aspect-ratio: 335 / 222;
-        height: 222px;
-        display: block;
-        border: 0;
-        margin-inline: auto;
-    }
 
-    @media screen and (min-width: 600px) and (max-width: 767px) {
-        aspect-ratio: 4 / 3;
-        width: 100%;
-        /* max-width: 100%; */
-        display: block;
-        margin-inline: auto;
-        height: auto;
     }
 }
 
 .access__content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: left;
     flex: 1;
     margin-left: 21px;
@@ -935,12 +920,6 @@ img {
         justify-content: flex-start;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 1023px) {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-    }
-
 }
 
 .access__name {
@@ -950,7 +929,7 @@ img {
     margin-bottom: 13px;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(27 / 375 * 100vw);
+        margin-top: calc(24 / 375 * 100vw);
         margin-bottom: calc(12 / 375 * 100vw);
         margin-left: 0;
     }
@@ -1120,14 +1099,14 @@ img {
 
 .contact__lead {
     text-align: center;
-    font-size: calc(17 / 1080 * 100vw);
+    font-size: 1.7rem;
     margin-block: calc(17 / 1080 * 100vw) calc(37 / 1080 * 100vw);
     line-height: 1.8;
     margin: 9px 0 0;
 
 
     @media screen and (max-width: 767px) {
-        font-size: calc(16 / 375 * 100vw);
+        font-size: 1.6rem;
         line-height: calc(30 / 16);
         margin-block: 28px 34px;
         /* margin-bottom: 34px; */
@@ -1180,15 +1159,15 @@ img {
 .contact__label {
     display: inline-flex;
     width: 140px;
-    font-size: calc(20 / 1080 * 100vw);
+    font-size: 2.0rem;
     font-weight: 600;
     text-align: left;
     align-items: flex-start;
     margin: 8px 0 7px;
-  
+
 
     @media screen and (max-width: 767px) {
-        font-size: calc(18 / 375 * 100vw);
+        font-size: 1.8rem;
         margin-bottom: calc(4 / 375 * 100vw);
         margin-left: calc(-11 / 375 * 100vw);
         white-space: nowrap;
@@ -1262,7 +1241,7 @@ img {
     @media screen and (max-width: 767px) {
         width: 100%;
         margin-inline: calc(-11 / 375 * 100vw);
-        margin-top: 11px;
+        margin-top: 8px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1270,10 +1249,10 @@ img {
     }
 
     @media screen and (max-width: 374px) {
-          margin-inline: 0; 
-          text-align: center;
-        }
-      
+        margin-inline: 0;
+        text-align: center;
+    }
+
 
 }
 
@@ -1282,7 +1261,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0;
-    font-size: calc(22 / 1080 * 100vw);
+    font-size: 2.2rem;
     font-weight: 700;
     color: #ffffff;
     background-color: #0D96A0;
@@ -1299,7 +1278,7 @@ img {
         width: 335px;
         height: 41px;
         margin-bottom: calc(3 / 375 *100vw);
-        font-size: calc(19 / 375 * 100vw);
+        font-size: 1.9rem;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1339,7 +1318,7 @@ img {
     @media screen and (max-width: 767px) {
         gap: 20px;
         padding-top: 47px;
-        margin: 0 0 23px;
+        margin: 1px 0 24px;
         row-gap: 7px;
     }
 
@@ -1347,18 +1326,18 @@ img {
 
 .footer_nav_list a {
     color: #fff;
-    font-size: calc(20 / 1080 * 100vw);
+    font-size: 2.0rem;
     font-weight: 700;
     text-decoration: none;
 
     @media screen and (max-width: 767px) {
-        font-size: calc(18 / 375 * 100vw);
+        font-size: 1.8rem;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 767px) {
+    /* @media screen and (min-width: 600px) and (max-width: 767px) {
         font-size: calc(18 / 600 * 100vw);
 
-    }
+    } */
 }
 
 .footer_line {
@@ -1382,18 +1361,18 @@ img {
 }
 
 .footer__copyright {
-    font-size: calc(20 / 1080 * 100vw);
+    font-size: 2.0rem;
     margin-top: 10px;
     margin-bottom: 1px;
     font-weight: 700;
 
     @media screen and (max-width: 767px) {
-        font-size: calc(16 / 375 * 100vw);
+        font-size: 1.6rem;
         padding-bottom: 24px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
-        font-size: calc(16 / 600 * 100vw);
+        font-size: 1.6rem;
     }
 }
 
