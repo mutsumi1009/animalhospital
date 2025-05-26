@@ -31,6 +31,12 @@ img {
     object-fit: cover;
 }
 
+@media(min-width: 768px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
+}
+
 .sp-br {
     display: none;
 }
@@ -116,9 +122,13 @@ img {
     height: 100%;
     margin: 0 auto;
 
+    @media screen and (max-width: 900px) {
+        padding-inline: 30px;
+    }
     @media screen and (max-width: 767px) {
         padding-inline: 20px;
     }
+
 }
 
 /* ロゴ */
@@ -143,7 +153,7 @@ img {
     height: 100%;
     text-decoration: none;
     color: #666666;
-    transition: color 0.3s ease, opacity 0.4s;
+    transition: opacity 0.4s;
 
 
 }
@@ -152,7 +162,7 @@ img {
     display: inline-block;
     padding: 10px;
     color: #666666;
-    transition: color 0.3s ease, opacity 0.4s;
+    transition: opacity 0.4s;
 
 }
 
@@ -228,7 +238,6 @@ img {
 .header__logo a:focus,
 .header__logo a:hover .logo__text,
 .header__logo a:focus .logo__text {
-    color: #0D96A0 !important;
     opacity: 0.7;
 }
 
@@ -659,7 +668,7 @@ img {
     background: rgba(13, 150, 160, 0.101961);
 
     @media screen and (max-width: 767px) {
-        padding: 49px 4px 54px 8px
+        padding: 49px 0 52px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -711,13 +720,7 @@ img {
 
 .news__item {
     border-top: 1px solid #707070;
-    /* border-bottom: 1px solid #707070; */
-    padding: 0px 18px 1px 18px;
 
-    @media screen and (max-width: 767px) {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .news__item+.news__item {
@@ -733,12 +736,13 @@ img {
     padding-block: 14px;
     /* gap: 24px; */
     flex-wrap: wrap;
+    padding-inline: 18px;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
-        gap: 7px;
+        gap: 9px;
         align-items: flex-start;
-        padding: 10px 0 19px 2px;
+        padding: 10px 0px 26px 10px
     }
 }
 
@@ -751,7 +755,7 @@ img {
     line-height: calc(25 / 17);
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(18 / 375 * 100vw);
+        margin-top: 18px;
         display: block;
         margin-left: 0;
         width: 100%;
@@ -808,6 +812,7 @@ img {
         margin-left: 0;
         flex-direction: column;
         width: 100%;
+        line-height: 1.5;
     }
 }
 
@@ -817,12 +822,12 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 69px;
-    /* padding-block: calc(3 / 1080 * 100vw); */
+    /* margin-bottom: 69px; */
+    padding-block: 68px 69px;
 
     @media screen and (max-width: 767px) {
-        padding-block: calc(3 / 375 * 100vw);
-        margin-bottom: 21px;
+        padding-block: 41px 21px;
+    
     }
 }
 
@@ -854,11 +859,10 @@ img {
     justify-content: center;
     gap: 20px;
     /* height: 25px; */
-    margin: 64px auto 49px;
+    margin: 0 auto 49px;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(41 / 375 * 100vw);
-        height: auto;
+        /* height: auto; */
     }
 }
 
@@ -963,8 +967,7 @@ img {
     margin-bottom: 6px;
 
     @media screen and (max-width: 767px) {
-        padding-left: calc(9 / 375 * 100vw);
-        padding-top: calc(0 / 375 * 100vw);
+        padding-left: 9px;
         margin: -7px;
         font-size: 1.6rem;
     }
@@ -974,14 +977,20 @@ img {
     }
 }
 
-.access__tel span {
+.access__tel a {
     color: #0D96A0;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: calc(40 / 25);
-
+    
     @media screen and (max-width: 767px) {
-        /* padding-left: 0; */
+        transition: opacity 0.4s;
+    }
+}
+
+.access__tel a:hover{
+    @media screen and (max-width: 767px) {
+      opacity: 0.7;
     }
 }
 
@@ -993,12 +1002,32 @@ img {
 
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
-        /* padding-left: calc(20 / 375 * 100vw); */
+        
         margin-left: 0;
         margin-top: 14px;
-        /* margin-bottom: 6px; */
+        
         text-align: left;
     }
+}
+
+.access__email a {
+    transition: opacity 0.4s;
+    /* font-weight: 500;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    margin-bottom: 13px;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1.6rem;
+        
+        margin-left: 0;
+        margin-top: 14px;
+        
+        text-align: left;
+    } */
+}
+.access__email a:hover{
+    opacity: 0.7;  
 }
 
 /* 診療時間 */
@@ -1041,15 +1070,15 @@ img {
 /* お問い合わせ */
 .contact {
     background: rgba(13, 150, 160, 0.101961);
-    padding: calc(48 / 1080 * 100vw) calc(31 / 1080 * 100vw) calc(41 / 1080 * 100vw);
+    padding: 46px 0 41px;
 
     @media screen and (max-width: 767px) {
-        padding-bottom: calc(5 / 375 * 100vw);
+        padding-block: 34px 46px;
     }
 
-    @media screen and (min-width: 768px) {
+    /* @media screen and (min-width: 768px) {
         padding-inline: 20px;
-    }
+    } */
 }
 
 .contact__head {
@@ -1073,9 +1102,7 @@ img {
     padding: 18px;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(12 / 375 * 100vw);
-
-
+      
     }
 }
 
@@ -1108,11 +1135,9 @@ img {
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
-        margin-block: 28px 34px;
-        /* margin-bottom: 34px; */
-        /* max-width: 335px; */
+        margin-block: 28px 37px;
         text-align: left;
-        margin-inline: -11px;
+      
     }
 
     @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -1129,7 +1154,10 @@ img {
     flex-direction: column;
     gap: calc(24 /1080 * 100vw);
 
-    @media screen and (max-width: 767px) {}
+    @media screen and (max-width: 767px) {
+        margin-top: 17px;
+        margin-bottom: 0;
+    }
 }
 
 .contact__item {
@@ -1142,7 +1170,7 @@ img {
         flex-direction: column;
         align-items: flex-start;
         gap: 2px;
-        margin-bottom: calc(24 / 375 * 100vw);
+        margin-bottom: 11px;
     }
 }
 
@@ -1152,7 +1180,7 @@ img {
     @media screen and (max-width: 767px) {
         flex-direction: column;
         align-items: flex-start;
-        gap: 9px;
+        gap: 0px;
     }
 }
 
@@ -1165,12 +1193,12 @@ img {
     align-items: flex-start;
     margin: 8px 0 7px;
 
-
     @media screen and (max-width: 767px) {
         font-size: 1.8rem;
-        margin-bottom: calc(4 / 375 * 100vw);
-        margin-left: calc(-11 / 375 * 100vw);
+        margin-bottom: 5px;
+        /* margin-left: calc(-11 / 375 * 100vw); */
         white-space: nowrap;
+        margin-top: 0;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1180,28 +1208,16 @@ img {
 }
 
 /* コンタクトフォーム個別 */
-.contact__item--name {
-    @media screen and (max-width: 767px) {
-        margin-top: calc(-7 / 335 * 100vw);
-
-    }
-}
-
-.contact__item--email {
-    @media screen and (max-width: 767px) {
-        margin-top: calc(-1 / 335 * 100vw);
-    }
-}
 
 .contact__input,
 .contact__textarea {
     width: 100%;
     max-width: 711px;
-    padding: calc(6 / 1080 * 100vw);
+    padding: 6px;
     font-size: 1.6rem;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     background-color: #fff;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     flex: 1;
 
     @media screen and (max-width: 767px) {
@@ -1213,8 +1229,12 @@ img {
     }
 }
 
-.access__input {
+.contact__input {
     height: 40px;
+
+    @media screen and (max-width: 767px) {
+        height: 50px;
+    }
 
 }
 
@@ -1236,12 +1256,12 @@ img {
 
 .contact__submit {
     text-align: center;
-    margin-top: calc(27 / 1080 * 100vw);
+    margin-top: 28px;
 
     @media screen and (max-width: 767px) {
         width: 100%;
-        margin-inline: calc(-11 / 375 * 100vw);
-        margin-top: 8px;
+        margin-inline: auto;
+        margin-top: 31px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1261,14 +1281,14 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #ffffff;
     background-color: #0D96A0;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
-    border: 2px solid #0D96A0;
+    border: 1px solid #0D96A0;
     transition: background-color 0.3s, color 0.3s;
 
     width: 200px;
