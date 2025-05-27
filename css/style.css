@@ -277,7 +277,7 @@ img {
         top: initial;
         bottom: 0;
         /* right:  calc(64 / 375 * 100vw); */
-        padding: calc(16 / 375 * 100vw) calc(23 / 375 * 100vw) calc(14 / 375 * 100vw) calc(20 / 375 * 100vw);
+        padding: calc(16 / 375 * 100vw) calc(20 / 375 * 100vw) calc(14 / 375 * 100vw) calc(20 / 375 * 100vw);
         width: calc(311 / 375 * 100vw);
         height: calc(148 / 375 * 100vw);
         transform: none;
@@ -1112,7 +1112,7 @@ img {
     vertical-align: middle;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(13 / 375 * 100vw);
+        margin-top: calc(7 / 375 * 100vw);
 
     }
 
