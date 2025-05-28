@@ -37,9 +37,17 @@ img {
     }
 }
 
-.sp-br {
+
+
+.sp {
     display: none;
 }
+
+
+@media screen and (min-width: 768px) {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
     .sp-br {
@@ -106,10 +114,7 @@ img {
     z-index: 9999;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
-        /* height: 30px; */
-
-    }
+    @media screen and (max-width: 767px) {}
 }
 
 /* ヘッダー内 */
@@ -196,7 +201,6 @@ img {
     padding: 0;
     margin: 0;
     height: 100%;
-    /* align-items: center; */
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
@@ -305,7 +309,7 @@ img {
     font-weight: 700;
     line-height: normal;
     font-size: calc(40 / 1080*100vw);
-    /* margin-top: calc(8 / 1080*100vw); */
+
 
     @media screen and (max-width: 767px) {
         font-size: calc(30 / 375*100vw);
@@ -339,10 +343,9 @@ img {
         font-size: 2.5rem;
         font-weight: 700;
         line-height: 3.5rem;
-        /* padding-left: calc(67 / 375 * 100vw); */
         margin-top: calc(-10 / 375 * 100vw);
     }
-    
+
 }
 
 .greeting__wrap {
@@ -359,7 +362,6 @@ img {
 
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
-        /* left: 20px; */
         margin-top: 16px;
         text-align: left;
         line-height: 3.0rem;
@@ -445,7 +447,6 @@ img {
 .strength__img {
     width: 50%;
     flex-shrink: 0;
-    /* margin-left: 7px; */
 
     @media screen and (max-width: 767px) {
         width: 100%;
@@ -462,7 +463,6 @@ img {
 }
 
 .strength__body {
-    /* max-width: 396px; */
     flex: 1;
 }
 
@@ -560,7 +560,6 @@ img {
     margin-bottom: calc(40 / 1080 * 100vw);
     gap: calc(16 / 1080 * 100vw);
     height: 44px;
-    /* position: relative; */
 
     @media screen and (max-width: 767px) {
         gap: calc(15/ 375 * 100vw);
@@ -600,7 +599,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 6%;
     list-style: none;
-    /* margin-bottom: 15px; */
 
     @media screen and (max-width: 767px) {
         grid-template-columns: 1fr;
@@ -632,7 +630,6 @@ img {
     /* 中間*/
     @media screen and (min-width: 768px) {
         line-height: calc(30 / 17);
-        /* margin-bottom: calc(82 / 1080 * 100vw); */
 
     }
 
@@ -641,7 +638,6 @@ img {
         line-height: calc(30 / 16);
         font-size: 1.6rem;
         margin-top: calc(7 / 375 * 100vw);
-        /* margin-bottom: calc( / 375 * 100vw); */
     }
 }
 
@@ -737,7 +733,6 @@ img {
     display: flex;
     align-items: center;
     padding-block: 14.5px;
-    /* gap: 24px; */
     flex-wrap: wrap;
     padding-inline: 18px;
 
@@ -769,7 +764,6 @@ img {
     flex: 1;
     display: flex;
     align-items: center;
-    /* gap: 25px; */
     flex-wrap: wrap;
 
     @media screen and (max-width: 767px) {
@@ -792,7 +786,6 @@ img {
 
     @media screen and (max-width: 767px) {
         min-width: auto;
-        /* width: 100%; */
         display: block;
         margin-left: 0;
         text-align: left;
@@ -825,7 +818,6 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* margin-bottom: 69px; */
     padding-block: 66px;
 
     @media screen and (max-width: 767px) {
@@ -838,35 +830,21 @@ img {
 .access__inner {
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-start; */
     gap: 25px;
 
     @media screen and (max-width: 767px) {
         flex-direction: column;
-        /* align-items: flex-start; */
         gap: 0;
     }
-
-    /* @media screen and (min-width:768px) and (max-width: 1023px) {
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding-inline: 16px;
-    } */
 }
 
 .access__head {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* height: 25px; */
     margin: 0 auto 49px;
 
-    @media screen and (max-width: 767px) {
-        /* height: auto; */
-    }
+    @media screen and (max-width: 767px) {}
 }
 
 .access__icon {
@@ -886,15 +864,11 @@ img {
 }
 
 .access__map {
-    /* flex: 1; */
-    /* min-width: 440px; */
     width: 50%;
 
     @media screen and (max-width: 767px) {
         width: 100%;
     }
-
-
 }
 
 
@@ -912,7 +886,6 @@ img {
 .access__content {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 50px; */
     text-align: left;
     flex: 1;
     margin-left: 21px;
@@ -920,7 +893,6 @@ img {
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
         margin-left: 0;
-        /* padding-left: calc(20 / 375 * 100vw); */
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -1015,19 +987,6 @@ img {
 
 .access__email a {
     transition: opacity 0.4s;
-    /* font-weight: 500;
-    font-size: 1.8rem;
-    line-height: calc(27 / 18);
-    margin-bottom: 13px;
-
-    @media screen and (max-width: 767px) {
-        font-size: 1.6rem;
-        
-        margin-left: 0;
-        margin-top: 14px;
-        
-        text-align: left;
-    } */
 }
 
 .access__email a:hover {
@@ -1069,8 +1028,6 @@ img {
 }
 
 
-
-
 /* お問い合わせ */
 .contact {
     background: rgba(13, 150, 160, 0.101961);
@@ -1087,10 +1044,7 @@ img {
     align-items: center;
     gap: 2px;
 
-    @media screen and (max-width: 767px) {
-        /* gap: 4px; */
-
-    }
+    @media screen and (max-width: 767px) {}
 }
 
 
@@ -1194,7 +1148,6 @@ img {
     @media screen and (max-width: 767px) {
         font-size: 1.8rem;
         margin-bottom: 5px;
-        /* margin-left: calc(-11 / 375 * 100vw); */
         white-space: nowrap;
         margin-top: 0;
     }
@@ -1213,13 +1166,10 @@ img {
     max-width: 711px;
     padding: 6px;
     font-size: 1.6rem;
-    /* border: 1px solid #ccc; */
     background-color: #fff;
-    /* border-radius: 4px; */
     flex: 1;
 
     @media screen and (max-width: 767px) {
-        /* max-width: 335px; */
         margin: 0 auto;
         flex: unset;
         margin-top: 0;
@@ -1368,9 +1318,9 @@ img {
     bottom: -10px;
     left: -6px;
     right: -6px;
-    z-index: -1; 
-  }
-  
+    z-index: -1;
+}
+
 
 
 .footer_line {
