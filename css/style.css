@@ -125,6 +125,7 @@ img {
     @media screen and (max-width: 900px) {
         padding-inline: 30px;
     }
+
     @media screen and (max-width: 767px) {
         padding-inline: 20px;
     }
@@ -219,6 +220,7 @@ img {
     color: #666666;
     position: relative;
     z-index: 10;
+    line-height: 1.8;
 
     @media screen and (max-width: 767px) {
         position: absolute;
@@ -340,6 +342,7 @@ img {
         /* padding-left: calc(67 / 375 * 100vw); */
         margin-top: calc(-10 / 375 * 100vw);
     }
+    
 }
 
 .greeting__wrap {
@@ -733,7 +736,7 @@ img {
 .news__link {
     display: flex;
     align-items: center;
-    padding-block: 14px;
+    padding-block: 14.5px;
     /* gap: 24px; */
     flex-wrap: wrap;
     padding-inline: 18px;
@@ -823,11 +826,11 @@ img {
     align-items: flex-start;
     flex-wrap: wrap;
     /* margin-bottom: 69px; */
-    padding-block: 68px 69px;
+    padding-block: 66px;
 
     @media screen and (max-width: 767px) {
-        padding-block: 41px 21px;
-    
+        padding-block: 42px 21px;
+
     }
 }
 
@@ -967,8 +970,8 @@ img {
     margin-bottom: 6px;
 
     @media screen and (max-width: 767px) {
-        padding-left: 9px;
-        margin: -7px;
+        padding-left: 7px;
+        margin: -6px;
         font-size: 1.6rem;
     }
 
@@ -982,15 +985,15 @@ img {
     font-weight: 600;
     font-size: 2.5rem;
     line-height: calc(40 / 25);
-    
+
     @media screen and (max-width: 767px) {
         transition: opacity 0.4s;
     }
 }
 
-.access__tel a:hover{
+.access__tel a:hover {
     @media screen and (max-width: 767px) {
-      opacity: 0.7;
+        opacity: 0.7;
     }
 }
 
@@ -1002,10 +1005,10 @@ img {
 
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
-        
+
         margin-left: 0;
         margin-top: 14px;
-        
+
         text-align: left;
     }
 }
@@ -1026,8 +1029,9 @@ img {
         text-align: left;
     } */
 }
-.access__email a:hover{
-    opacity: 0.7;  
+
+.access__email a:hover {
+    opacity: 0.7;
 }
 
 /* 診療時間 */
@@ -1036,7 +1040,7 @@ img {
     font-size: 1.8rem;
     line-height: calc(40 / 18);
     border-block-start: 1px solid #707070;
-    margin: 14px 0 0 4px;
+    margin: 13px 0 0 4px;
     padding: 15px 1px 0px 0px;
 
     @media screen and (max-width: 767px) {
@@ -1070,15 +1074,11 @@ img {
 /* お問い合わせ */
 .contact {
     background: rgba(13, 150, 160, 0.101961);
-    padding: 46px 0 41px;
+    padding: 47px 0 40px;
 
     @media screen and (max-width: 767px) {
-        padding-block: 34px 46px;
+        padding-block: 34px 45px;
     }
-
-    /* @media screen and (min-width: 768px) {
-        padding-inline: 20px;
-    } */
 }
 
 .contact__head {
@@ -1099,11 +1099,9 @@ img {
     font-weight: 700;
     line-height: calc(30 / 25);
     text-align: center;
-    padding: 18px;
+    padding: 17px;
 
-    @media screen and (max-width: 767px) {
-      
-    }
+    @media screen and (max-width: 767px) {}
 }
 
 .contact__icon {
@@ -1112,7 +1110,7 @@ img {
     vertical-align: middle;
 
     @media screen and (max-width: 767px) {
-        margin-top: calc(7 / 375 * 100vw);
+        margin-top: 0;
 
     }
 
@@ -1135,9 +1133,9 @@ img {
     @media screen and (max-width: 767px) {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
-        margin-block: 28px 37px;
+        margin-block: 25px 37px;
         text-align: left;
-      
+
     }
 
     @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -1191,7 +1189,7 @@ img {
     font-weight: 600;
     text-align: left;
     align-items: flex-start;
-    margin: 8px 0 7px;
+    margin: 9px 0 7px;
 
     @media screen and (max-width: 767px) {
         font-size: 1.8rem;
@@ -1261,7 +1259,7 @@ img {
     @media screen and (max-width: 767px) {
         width: 100%;
         margin-inline: auto;
-        margin-top: 31px;
+        margin-top: 34px;
     }
 
     @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1337,7 +1335,7 @@ img {
 
     @media screen and (max-width: 767px) {
         gap: 20px;
-        padding-top: 47px;
+        padding-top: 46px;
         margin: 1px 0 24px;
         row-gap: 7px;
     }
@@ -1349,16 +1347,31 @@ img {
     font-size: 2.0rem;
     font-weight: 700;
     text-decoration: none;
+    transition: opacity 0.4s;
+    position: relative;
+    display: block;
+    z-index: 1;
 
     @media screen and (max-width: 767px) {
         font-size: 1.8rem;
     }
-
-    /* @media screen and (min-width: 600px) and (max-width: 767px) {
-        font-size: calc(18 / 600 * 100vw);
-
-    } */
 }
+
+.footer_nav_list a:hover {
+    opacity: 0.7;
+}
+
+.footer_nav_list a::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    bottom: -10px;
+    left: -6px;
+    right: -6px;
+    z-index: -1; 
+  }
+  
+
 
 .footer_line {
     width: 100%;
@@ -1402,4 +1415,10 @@ img {
     justify-content: center;
     align-items: center;
     gap: 12px;
+    transition: opacity 0.4s;
+}
+
+.footer_sns a:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
