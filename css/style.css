@@ -1390,8 +1390,3 @@ img {
 	cursor: pointer;
 }
 
-* {
-	outline: 1px solid red;
-	background-color: rgba(255, 0, 0, 0.05); /* うっすら赤背景 */
-  }
-  
