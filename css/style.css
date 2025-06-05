@@ -54,7 +54,6 @@ img {
 	}
 }
 
-
 @media screen and (min-width: 768px) {
 	.sp-br {
 		display: inline-block;
@@ -166,8 +165,6 @@ img {
 	text-decoration: none;
 	color: #666666;
 	transition: opacity 0.4s;
-
-
 }
 
 .logo__text {
@@ -180,10 +177,7 @@ img {
 		padding: 0;
 		margin: 9px;
 	}
-
 }
-
-
 
 .header__img {
 	width: 25px;
@@ -217,7 +211,6 @@ img {
 	}
 }
 
-
 .header__nav-list li {
 	height: 100%;
 }
@@ -246,7 +239,6 @@ img {
 		line-height: 1.65;
 	}
 }
-
 
 .header__nav-list a:hover,
 .header__nav-list a:focus,
@@ -326,7 +318,6 @@ img {
 }
 
 
-
 /* 挨拶 --> */
 .greeting {
 	padding: 59px 0;
@@ -338,7 +329,6 @@ img {
 		text-align: center;
 	}
 }
-
 
 .greeting__title {
 	font-size: 3.0rem;
@@ -352,7 +342,6 @@ img {
 		line-height: 1.4;
 		margin-top: calc(-10 / 375 * 100vw);
 	}
-
 }
 
 .greeting__wrap {
@@ -378,7 +367,6 @@ img {
 		text-align: left;
 		margin-inline: auto;
 		max-width: 75%;
-
 	}
 }
 
@@ -564,7 +552,6 @@ img {
 }
 
 
-
 /* サービス */
 .service {
 	background-color: #FFFFFF;
@@ -576,7 +563,6 @@ img {
 		margin-top: -32px;
 		padding-block: 74px;
 	}
-
 }
 
 .service__head {
@@ -617,7 +603,6 @@ img {
 		margin-bottom: calc(30 / 375 * 100vw);
 		aspect-ratio: 335 / 200;
 	}
-
 }
 
 .service__items {
@@ -653,13 +638,6 @@ img {
 	font-size: 1.7rem;
 	line-height: 1.8;
 
-	/* 中間*/
-	@media screen and (min-width: 768px) {
-		/* line-height: calc(30 / 17); */
-
-	}
-
-	/* スマホ */
 	@media screen and (max-width: 767px) {
 		line-height: 1.875;
 		font-size: 1.6rem;
@@ -785,7 +763,6 @@ img {
 	line-height: 1.5;
 
 	@media screen and (max-width: 767px) {
-		/* margin-top: 18px; */
 		display: block;
 		margin-left: 0;
 		width: 100%;
@@ -915,7 +892,6 @@ img {
 
 	@media screen and (max-width: 767px) {
 		aspect-ratio: 335 / 222;
-
 	}
 }
 
@@ -971,6 +947,19 @@ img {
 	}
 }
 
+/* アドレススペース */
+.space-on-pc {
+	display: inline;
+}
+
+@media screen and (max-width: 374px) {
+	.space-on-pc {
+		display: none;
+	}
+}
+
+
+
 .access__tel {
 	font-weight: 500;
 	font-size: 1.8rem;
@@ -1013,10 +1002,8 @@ img {
 
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
-
 		margin-left: 0;
 		margin-top: 14px;
-
 		text-align: left;
 	}
 }
@@ -1101,7 +1088,6 @@ img {
 
 	@media screen and (max-width: 767px) {
 		margin-top: 0;
-
 	}
 
 }
@@ -1125,13 +1111,11 @@ img {
 		line-height: 1.9;
 		margin-block: 26px 37px;
 		text-align: left;
-
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 1023px) {
 		font-size: 1.6rem;
 		max-width: 100%;
-
 	}
 
 }
@@ -1235,8 +1219,6 @@ img {
 }
 
 
-
-
 .contact__label--textarea {
 	margin-top: 10px;
 }
@@ -1259,8 +1241,6 @@ img {
 		margin-inline: 0;
 		text-align: center;
 	}
-
-
 }
 
 .contact__button {
@@ -1277,7 +1257,6 @@ img {
 	cursor: pointer;
 	border: 1px solid #0D96A0;
 	transition: background-color 0.3s, color 0.3s;
-
 	width: 200px;
 	height: 50px;
 
@@ -1328,7 +1307,6 @@ img {
 		margin: 1px 0 24px;
 		row-gap: 7px;
 	}
-
 }
 
 .footer_nav_list a {
@@ -1360,8 +1338,6 @@ img {
 	z-index: -1;
 }
 
-
-
 .footer_line {
 	width: 100%;
 	max-width: 737px;
@@ -1378,7 +1354,6 @@ img {
 
 	@media screen and (max-width: 767px) {
 		margin-top: calc(-9 / 335 * 100vw);
-
 	}
 }
 
@@ -1410,11 +1385,13 @@ img {
 	}
 }
 
-
-
-
-
 .footer_sns a:hover {
 	opacity: 0.7;
 	cursor: pointer;
 }
+
+* {
+	outline: 1px solid red;
+	background-color: rgba(255, 0, 0, 0.05); /* うっすら赤背景 */
+  }
+  
