@@ -342,7 +342,7 @@ img {
 
 /* 挨拶 --> */
 .greeting {
-	padding: 60px 0;
+	padding: 61px 0;
 	text-align: center;
 	background: #FFFFFF;
 
@@ -422,15 +422,15 @@ img {
 /* 強み --> */
 .strength {
 	background-color: rgba(13, 150, 160, 0.10);
-	padding: 66px 0 68px;
+	padding: 65px 0 68px;
 
 	@media screen and (max-width: 767px) {
-		padding: 53px 0 37px;
+		padding: 51px 0 35px;
 	}
 }
 
 .strength__items {
-	margin-top: 48px;
+	margin-top: 47px;
 
 	@media screen and (max-width: 767px) {
 		margin-top: 43px;
@@ -484,7 +484,7 @@ img {
 	flex: 1;
 
 	@media screen and (max-width: 767px) {
-		padding-top: 26px;
+		padding-top: 27px;
 	}
 }
 
@@ -492,6 +492,7 @@ img {
 	font-size: 2.2rem;
 	font-weight: 700;
 	line-height: 1.4;
+	padding: 0;
 
 	@media screen and (max-width: 767px) {
 		font-size: 2.0rem;
@@ -518,11 +519,11 @@ img {
 /* PC表示（768px〜） */
 @media screen and (min-width: 768px) {
 	.strength--exotic .strength__subtitle {
-		margin: 0px 10px 0 11px;
+		margin: 1px 10px 0 11px;
 	}
 
 	.strength--exotic .strength__text {
-		margin: 19px 0 0 7px;
+		margin: 22px -3px 0px 10px;
 		line-height: 1.8;
 	}
 }
@@ -530,7 +531,7 @@ img {
 /* サービス */
 .service {
 	background-color: #FFFFFF;
-	padding: 64px 0 58px;
+	padding: 65px 0 59px;
 
 
 
@@ -600,11 +601,11 @@ img {
 
 /* お知らせ */
 .news {
-	padding: 64px 46px 70px;
+	padding: 64px 46px 67px;
 	background: rgba(13, 150, 160, 0.101961);
 
 	@media screen and (max-width: 767px) {
-		padding: 44px 0 50px;
+		padding: 44px 1px 51px 3px
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 767px) {
@@ -615,10 +616,10 @@ img {
 
 
 .news .section__head {
-	margin-bottom: 45px;
+	margin-bottom: 43px;
 
 	@media screen and (max-width: 767px) {
-		margin-bottom: 46px;
+		margin-bottom: 44px;
 		gap: 21px;
 	}
 }
@@ -634,11 +635,13 @@ img {
 
 .news__list {
 	list-style: none;
-	padding: 0;
+	padding: 3px 0 ;
 	margin: 0;
 	border-bottom: 1px solid #707070;
 
-	@media screen and (max-width: 767px) {}
+	@media screen and (max-width: 767px) {
+		padding: 1px 0 ;
+	}
 }
 
 
@@ -671,7 +674,7 @@ img {
 		flex-direction: column;
 		gap: 9px;
 		align-items: flex-start;
-		padding: 28px 3px 27px 10px
+		padding: 29px 0px 26px 6px;
 	}
 }
 
@@ -747,7 +750,7 @@ img {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	padding: 65px 0 71px;
+	padding: 63px 0 71px;
 
 	@media screen and (max-width: 767px) {
 		padding-block: 44px 25px;
@@ -841,7 +844,7 @@ img {
 
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
-		margin: 1px 0 12px 0;
+		margin: 0 0 13px 0;
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 767px) {
@@ -906,7 +909,7 @@ img {
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
 		margin-left: 0;
-		margin-top: 17px;
+		margin-top: 16px;
 		text-align: left;
 	}
 }
@@ -932,7 +935,7 @@ img {
 		font-size: 1.6rem;
 		line-height: 2.8;
 		padding-top: 6px;
-		margin: 5px 0 -3px 1px;
+		margin: 4px 0 -4px 0px;
 	}
 }
 
@@ -957,10 +960,10 @@ img {
 /* お問い合わせ */
 .contact {
 	background: rgba(13, 150, 160, 0.101961);
-	padding: 64px 0 42px;
+	padding: 64px 0 41px;
 
 	@media screen and (max-width: 767px) {
-		padding-block: 45px 46px;
+		padding-block: 46px 47px;
 	}
 }
 
@@ -1095,7 +1098,7 @@ img {
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		margin-inline: auto;
-		margin-top: 30px;
+		margin-top: 31px;
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 767px) {
@@ -1153,10 +1156,10 @@ img {
 	color: #fff;
 	background: #505050;
 	text-align: center;
-	padding: 68px 0 72px;
+	padding: 69px 0 72px;
 
 	@media screen and (max-width: 767px) {
-		padding: 48px 0 51px;
+		padding: 48px 0 50px;
 	}
 }
 
@@ -1171,7 +1174,7 @@ img {
 
 	@media screen and (max-width: 767px) {
 		gap: 20px;
-		margin: 0 0 24px;
+		margin: 0 0 23px;
 		row-gap: 6px;
 	}
 }
@@ -1232,7 +1235,7 @@ img {
 
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
-		padding-block: 2px 23px;
+		padding: 1px 2px 24px 2px;
 	}
 
 	@media screen and (max-width: 359px) {
