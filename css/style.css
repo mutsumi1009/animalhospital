@@ -392,13 +392,13 @@ img {
 
 .greeting__icon {
 	position: absolute;
-	right: 10px;
-	bottom: 8px;
-	width: 68px;
-	height: 63px;
-	z-index: 0;
+	width: 84px;
+	height: 77px;
+	right: -25px;
+	bottom: -25px;
+	z-index: -1;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (max-width: 767px) {
 		width: 68px;
 		height: 63px;
 		right: 10px;
@@ -621,7 +621,7 @@ img {
 
 .news__list {
 	list-style: none;
-	padding: 3px 0;
+	padding: 3px 0 2px;
 	margin: 0;
 	border-bottom: 1px solid #707070;
 
@@ -806,7 +806,7 @@ img {
 	font-weight: 700;
 	font-size: 2.2rem;
 	line-height: 1.5;
-	margin-bottom: 13px;
+	margin-bottom: 14px;
 
 	@media screen and (max-width: 767px) {
 		margin-top: 41px;
@@ -941,7 +941,7 @@ img {
 /* お問い合わせ */
 .contact {
 	background: rgba(13, 150, 160, 0.101961);
-	padding: 64px 0 41px;
+	padding: 64px 0 43px;
 
 	@media screen and (max-width: 767px) {
 		padding-block: 42px 46px;
@@ -949,7 +949,7 @@ img {
 }
 
 .contact .section__head {
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 }
 
 .contact__lead {
@@ -1015,7 +1015,7 @@ img {
 	font-weight: 600;
 	text-align: left;
 	align-items: flex-start;
-	margin: 10px 0 6px;
+	margin: 9px 0 7px;
 
 	@media screen and (max-width: 767px) {
 		font-size: 1.8rem;
@@ -1028,6 +1028,7 @@ img {
 		font-size: 1.8rem;
 	}
 }
+
 /* アイコン個別 */
 
 .contact .section__icon {
@@ -1140,7 +1141,7 @@ img {
 	color: #fff;
 	background: #505050;
 	text-align: center;
-	padding: 69px 0 72px;
+	padding: 68px 0 72px;
 
 	@media screen and (max-width: 767px) {
 		padding: 48px 0 51px;
@@ -1232,7 +1233,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	
+
 
 	@media screen and (max-width: 359px) {
 		margin-bottom: 20px;
@@ -1252,7 +1253,7 @@ img {
 .footer_sns a img {
 	transition: opacity 0.4s ease, transform 0.4s ease;
 	opacity: 1;
-	transform: scale(1); 
+	transform: scale(1);
 
 }
 
