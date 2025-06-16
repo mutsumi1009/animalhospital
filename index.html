@@ -294,23 +294,25 @@
 					お問い合わせいただいてから3日以内の返信となります。
 				</p>
 				<form class="contact__form" action="#" method="post">
-					<div class="contact__item contact__item--name">
-						<label for="name" class="contact__label">お名前</label>
-						<input type="text" id="name" name="name" class="contact__input" required>
+					<div class="contact__items">
+						<div class="contact__item contact__item--name">
+							<label for="name" class="contact__label">お名前</label>
+							<input type="text" id="name" name="name" class="contact__input" required>
+						</div>
+						<div class="contact__item contact__item--email">
+							<label for="email" class="contact__label">メールアドレス</label>
+							<input type="email" id="email" name="email" class="contact__input" required>
+						</div>
+						<div class="contact__item contact__item--textarea">
+							<label for="message" class="contact__label">内　容</label>
+							<textarea id="message" name="message" class="contact__textarea" required></textarea>
+						</div>
 					</div>
-					<div class="contact__item contact__item--email">
-						<label for="email" class="contact__label">メールアドレス</label>
-						<input type="email" id="email" name="email" class="contact__input" required>
-					</div>
-					<div class="contact__item contact__item--textarea">
-						<label for="message" class="contact__label">内　容</label>
-						<textarea id="message" name="message" class="contact__textarea" required></textarea>
-					</div>
-
 					<div class="contact__submit">
 						<button type="submit" class="contact__button">送&nbsp;信</button>
 					</div>
 				</form>
+
 			</div>
 		</section>
 	</main>
