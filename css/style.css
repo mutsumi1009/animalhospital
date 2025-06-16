@@ -226,7 +226,7 @@ img {
 	gap: 8px;
 	list-style: none;
 	padding: 0;
-	margin-block: 3px;
+	/* margin-block: 3px; */
 	height: 100%;
 
 	@media screen and (max-width: 767px) {
@@ -243,10 +243,10 @@ img {
 	font-size: 1.4rem;
 	font-weight: 700;
 	transition: opacity 0.4s;
-	height: 100%;
+	/* height: 100%; */
 	display: flex;
 	align-items: center;
-	padding-inline: 1px;
+	padding: 14px 1px 0;
 	color: #666666;
 	position: relative;
 	z-index: 10;
@@ -531,9 +531,9 @@ img {
 	}
 }
 
-.service .section__head {
+/* .service .section__head {
 	gap: 16px;
-}
+} */
 
 .service__img img {
 	aspect-ratio: 260 / 200;
@@ -547,7 +547,7 @@ img {
 .service__items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 50px;
+	gap: calc(61 / 1080 * 100%);
 	list-style: none;
 
 	@media screen and (max-width: 767px) {
@@ -592,18 +592,18 @@ img {
 	background: rgba(13, 150, 160, 0.101961);
 
 	@media screen and (max-width: 767px) {
-		padding: 44px 1px 51px 3px;
+		padding: 44px 2px 54px 3px;
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 767px) {
-		padding: 60px 0 51px;
-		margin-top: 30px;
+		padding: 60px 0 81px;
+		/* margin-top: 30px; */
 	}
 }
 
 
 .news .section__head {
-	margin-bottom: 44px;
+	margin-bottom: 41px;
 
 	@media screen and (max-width: 767px) {
 		gap: 21px;
@@ -623,7 +623,7 @@ img {
 	list-style: none;
 	padding: 3px 0 2px;
 	margin: 0;
-	border-bottom: 1px solid #707070;
+	border-top: 1px solid #707070;
 
 	@media screen and (max-width: 767px) {
 		padding: 1px 0;
@@ -632,7 +632,7 @@ img {
 
 
 .news__item {
-	border-top: 1px solid #707070;
+	border-bottom: 1px solid #707070;
 
 }
 
@@ -747,7 +747,7 @@ img {
 .access__inner {
 	display: flex;
 	justify-content: space-between;
-	gap: 25px;
+	gap: calc(57 / 1080 * 100%);
 
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
@@ -790,10 +790,10 @@ img {
 	flex-direction: column;
 	text-align: left;
 	flex: 1;
-	margin-left: 21px;
+	/* margin-left: 21px; */
 
 	@media screen and (max-width: 767px) {
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 		margin-left: 0;
 		width: 100%;
 		box-sizing: border-box;
@@ -860,7 +860,7 @@ img {
 	}
 
 	@media screen and (min-width: 600px) and (max-width: 767px) {
-		padding-left: 5px;
+		/* padding-left: 5px; */
 	}
 }
 
@@ -916,7 +916,7 @@ img {
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
 		line-height: 2.8;
-		padding-top: 6px;
+		padding-top: 4px;
 		margin: 4px 0 -4px 0px;
 	}
 }
@@ -933,15 +933,15 @@ img {
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
 		line-height: 1.7;
-		padding: 2px 0px 13px 6px;
-		margin: -6px;
+		padding: 0 0 11px;
+		/* margin: -6px; */
 	}
 }
 
 /* お問い合わせ */
 .contact {
 	background: rgba(13, 150, 160, 0.101961);
-	padding: 64px 0 43px;
+	padding: 64px 0 78px;
 
 	@media screen and (max-width: 767px) {
 		padding-block: 42px 46px;
@@ -973,14 +973,15 @@ img {
 }
 
 .contact__form {
-	margin: 38px 0;
+	margin: 38px 0 0;
 	display: flex;
 	flex-direction: column;
-	gap: calc(24 /1080 * 100vw);
+	gap: 24px;
 
 	@media screen and (max-width: 767px) {
-		margin-top: 17px;
-		margin-bottom: 0;
+		/* margin-top: 17px; */
+		/* margin-bottom: 0; */
+		gap: 5px
 	}
 }
 
@@ -1116,7 +1117,7 @@ img {
 	@media screen and (max-width: 767px) {
 		width: 335px;
 		height: 41px;
-		margin-bottom: calc(3 / 375 *100vw);
+		/* margin-bottom: calc(3 / 375 *100vw); */
 		font-size: 1.9rem;
 	}
 
