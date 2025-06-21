@@ -246,6 +246,7 @@ img {
 	height: 100%;
 	align-items: center;
 	padding-inline: 1px;
+	padding-top: 4px;
 	color: #666666;
 	position: relative;
 	z-index: 10;
