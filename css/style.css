@@ -719,7 +719,6 @@ img {
 /* アクセス */
 .access {
 	background: #FFFFFF;
-	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	padding: 62px 0 71px;
