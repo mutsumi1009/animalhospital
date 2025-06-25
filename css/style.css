@@ -1115,7 +1115,7 @@ img {
 	padding: 68px 0 72px;
 
 	@media screen and (max-width: 767px) {
-		padding: 49px 0 51px;
+		padding: 48px 0 53px;
 	}
 }
 
@@ -1232,3 +1232,4 @@ img {
 	opacity: 0.7;
 	transform: scale(1.05);
 }
+
