@@ -534,7 +534,7 @@ img {
 .service__items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 50px;
+	gap: calc(50 / 880 * 100%);
 	list-style: none;
 
 	@media screen and (max-width: 767px) {
@@ -609,7 +609,7 @@ img {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	border-top: 1px solid #707070;
+
 
 	@media screen and (max-width: 767px) {
 		padding: 0;
@@ -620,6 +620,11 @@ img {
 .news__item {
 	border-bottom: 1px solid #707070;
 }
+
+.news__item:first-child {
+	border-top: 1px solid #707070;
+}
+
 
 .news__link {
 	display: flex;
@@ -637,17 +642,17 @@ img {
 
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
-		gap: 10px;
+		/* gap: 10px; */
 		align-items: flex-start;
-		padding: 30px 6px 26px;
+		padding: 30px 6px 24px;
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.news__link--padding {
-	  padding-right: 2px;
+		padding-right: 2px;
 	}
-  }
+}
 
 
 .news__date {
@@ -674,7 +679,7 @@ img {
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 0;
+		gap: 6px;
 	}
 }
 
@@ -694,7 +699,7 @@ img {
 		display: block;
 		margin-left: 0;
 		text-align: left;
-		margin: -9px 0px 3px;
+		/* margin: -9px 0px 3px; */
 	}
 }
 
@@ -731,7 +736,7 @@ img {
 
 .access__inner {
 	display: flex;
-	gap: 46px;
+	gap: calc(46 / 880 * 100%);
 
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
@@ -854,7 +859,7 @@ img {
 	font-weight: 500;
 	font-size: 1.8rem;
 	line-height: 1.5;
-	margin-top: 10px; 
+	margin-top: 10px;
 
 	@media screen and (max-width: 767px) {
 		font-size: 1.6rem;
@@ -911,7 +916,7 @@ img {
 	padding: 62px 0 80px;
 
 	@media screen and (max-width: 767px) {
-		padding-block: 42px 49px;
+		padding-block: 43px 48px;
 	}
 }
 
@@ -941,20 +946,18 @@ img {
 
 .contact__form {
 	margin: 38px 0 0;
-	
-	@media screen and (max-width: 767px) {
-	
-	}
+
+	@media screen and (max-width: 767px) {}
 }
 
-.contact__items{
+.contact__items {
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
+	flex-direction: column;
+	gap: 25px;
 
 	@media screen and (max-width: 767px) {
 		gap: 19px;
-    }
+	}
 }
 
 .contact__item {
@@ -1231,4 +1234,3 @@ img {
 	opacity: 0.7;
 	transform: scale(1.05);
 }
-
